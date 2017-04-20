@@ -14,7 +14,7 @@ const port = process.env.PORT || 3338;
 
 let color = '#ffffff';
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', express.static(path.join(__dirname, 'html')));
 
 io.on('connection', (s) => {
@@ -24,9 +24,9 @@ io.on('connection', (s) => {
 
 app.post('/color', (req, res) => {
   color = req.body.color;
-  console.log('Changing color to', color); 
+  console.log('Changing color to', color);
   io.emit('color', color);
-  res.send({color: color});
+  res.send({ color });
 });
 
 server.listen(port, () => {
