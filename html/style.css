@@ -1,0 +1,14 @@
+body {
+  font-family: helvetica, sans-serif;
+  transition: background-color 2s ease;
+  background-color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff;
+  color: #2c3e50;
+}
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
