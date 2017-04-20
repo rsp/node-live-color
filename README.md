@@ -11,9 +11,9 @@ Clone the git repo:
 git clone https://github.com/rsp/node-live-color.git
 ```
 or download the ZIP file:
-```
-wget https://github.com/rsp/node-live-color/archive/master.zip
-```
+
+* https://github.com/rsp/node-live-color/archive/master.zip
+
 Inside the project directory install dependencies:
 ```sh
 npm i
@@ -28,6 +28,25 @@ npm start
 And access the URL shown in the browser. By default it's:
 
 * http://localhost:3338/
+
+but you can start the server listening on a differet port:
+```sh
+PORT=4444 npm start
+```
+
+Changing color
+-
+Send color=HTMLCOLOR in the body
+with Content-Type: `application/x-www-form-urlencoded`
+to POST `/color` endpoint.
+
+```sh
+curl -X POST -d 'color=#2ecc71' localhost:3338/color
+
+curl -X POST -d 'color=#639' localhost:3338/color
+
+curl -X POST -d 'color=black' localhost:3338/color
+```
 
 Issues
 -
