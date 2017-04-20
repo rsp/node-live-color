@@ -1,0 +1,29 @@
+{
+  "name": "node-live-color",
+  "version": "0.0.0",
+  "description": "Changing website background color live with Node/Express/Socket.io",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsp/node-live-color.git"
+  },
+  "author": "Rafał Pocztarski <r.pocztarski@gmail.com> (https://pocztarski.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsp/node-live-color/issues"
+  },
+  "homepage": "https://github.com/rsp/node-live-color#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
