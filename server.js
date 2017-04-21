@@ -29,6 +29,20 @@ app.post('/color', (req, res) => {
   res.send({ color });
 });
 
+app.get('/color/:color', (req, res) => {
+  color = req.params.color.replace('+', '#');
+  console.log('Changing color to', color);
+  io.emit('color', color);
+  res.send({ color });
+});
+
+app.post('/message', (req, res) => {
+  color = req.body.Body;
+  console.log('Changing color to', color);
+  io.emit('color', color);
+  res.end();
+});
+
 server.listen(port, () => {
   console.log(`Listening on http://localhost:${port}/`);
 });

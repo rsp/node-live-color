@@ -4,6 +4,9 @@ Example for Stack Overflow answer:
 
 * [Getting data from/writing data to localhost with Express](https://stackoverflow.com/questions/43499382/getting-data-from-writing-data-to-localhost-with-express/43500104#43500104)
 
+It is a server that serves a page that changes color when
+a new color is sent in a request to a `POST /color` endpoint.
+
 Installation
 -
 Clone the git repo:
@@ -38,15 +41,26 @@ Changing color
 -
 Send color=HTMLCOLOR in the body
 with Content-Type: `application/x-www-form-urlencoded`
-to POST `/color` endpoint.
+to POST `/color` endpoint:
 
 ```sh
-curl -X POST -d 'color=#2ecc71' localhost:3338/color
+curl -X POST -d color=#2ecc71 http://localhost:3338/color
 
-curl -X POST -d 'color=#639' localhost:3338/color
+curl -X POST -d color=#639 http://localhost:3338/color
 
-curl -X POST -d 'color=black' localhost:3338/color
+curl -X POST -d color=black http://localhost:3338/color
 ```
+
+Or using a GET `/color/:color` endpoint for convenience:
+
+```sh
+curl -X http://localhost:3338/color/+2ecc71
+
+curl -X http://localhost:3338/color/+639
+
+curl -X http://localhost:3338/color/black
+```
+Note the `+` instead of `#`.
 
 Issues
 -
