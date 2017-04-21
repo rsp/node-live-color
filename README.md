@@ -7,6 +7,12 @@ Example for Stack Overflow answer:
 It is a server that serves a page that changes color when
 a new color is sent in a request to a `POST /color` endpoint.
 
+Deploy to Heroku
+-
+Click this button to deploy this app to Heroku:
+
+[![Deploy to Heroku][deploy-img]][deploy-url]
+
 Installation
 -
 Clone the git repo:
