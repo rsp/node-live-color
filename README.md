@@ -11,7 +11,7 @@ Deploy to Heroku
 -
 Click this button to deploy this app to Heroku:
 
-[![Deploy to Heroku][deploy-img]][deploy-url]
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/rsp/node-live-color)
 
 Installation
 -
@@ -86,6 +86,8 @@ License
 -
 MIT License (Expat). See [LICENSE.md](LICENSE.md) for details.
 
+[deploy-img]: https://www.herokucdn.com/deploy/button.png
+[deploy-url]: https://heroku.com/deploy?template=https://github.com/rsp/node-live-color
 [github-url]: https://github.com/rsp/node-live-color
 [readme-url]: https://github.com/rsp/node-live-color#readme
 [issues-url]: https://github.com/rsp/node-live-color/issues
