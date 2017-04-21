@@ -1,2 +1,7 @@
 {
+  "name": "node-live-color",
+  "description": "Changing website background color live with Node/Express/Socket.io",
+  "repository": "https://github.com/rsp/node-live-color",
+  "website": "https://stackoverflow.com/questions/43499382/getting-data-from-writing-data-to-localhost-with-express/43500104#43500104",
+  "image": "heroku/node"
 }
